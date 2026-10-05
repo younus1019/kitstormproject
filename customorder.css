@@ -1560,6 +1560,53 @@ html.dark .order-process-icon {
   line-height: 1.8;
 }
 
+
+.team-enquiry-extra {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-top: 55px;
+}
+
+.team-enquiry-extra-line {
+  width: 2px;
+  min-height: 78px;
+  flex-shrink: 0;
+  background: var(--secondary);
+}
+
+.team-enquiry-extra-content {
+  max-width: 320px;
+}
+
+.team-enquiry-extra-content > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--secondary);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.team-enquiry-extra-content strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.team-enquiry-extra-content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+
 /* =========================================================
    POINTS
 ========================================================= */

@@ -1747,6 +1747,40 @@ html.dark .pricing-factors-footer {
   line-height: 1.8;
 }
 
+.pricing-included-extra {
+  position: relative;
+  z-index: 2;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding-left: 16px;
+  border-left: 2px solid var(--secondary);
+}
+
+.pricing-included-extra > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--secondary);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.pricing-included-extra strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.pricing-included-extra p {
+  max-width: 340px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 1.7;
+}
 
 /* =========================================================
    LIST
