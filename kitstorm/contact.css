@@ -1,0 +1,3205 @@
+.contact-hero {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+  overflow: hidden;
+  background: #0d0911;
+  color: #ffffff;
+}
+
+.contact-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.contact-hero-bg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.02);
+  transition: transform 1.2s ease;
+}
+
+.contact-hero:hover .contact-hero-bg img {
+  transform: scale(1.05);
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 6, 12, 0.97) 0%,
+      rgba(8, 6, 12, 0.91) 22%,
+      rgba(8, 6, 12, 0.74) 40%,
+      rgba(8, 6, 12, 0.35) 61%,
+      rgba(8, 6, 12, 0.08) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(8, 6, 12, 0.65) 0%,
+      transparent 38%,
+      rgba(8, 6, 12, 0.18) 100%
+    );
+}
+
+.contact-hero-container {
+  position: relative;
+  z-index: 3;
+  width: min(100% - 48px, 1380px);
+  min-height: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.contact-hero-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.contact-hero-breadcrumb a {
+  color: #ffffff;
+  transition: color var(--transition);
+}
+
+.contact-hero-breadcrumb a:hover {
+  color: var(--secondary);
+}
+
+.contact-hero-breadcrumb svg {
+  width: 12px;
+  height: 12px;
+  color: var(--secondary);
+}
+
+.contact-hero-breadcrumb span {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.contact-hero-number {
+  color: rgba(255, 255, 255, 0.28);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.contact-hero-content {
+  width: 100%;
+  max-width: 680px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 80px 0 70px;
+}
+
+.contact-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 176, 0, 0.45);
+  border-radius: 999px;
+  background: rgba(255, 176, 0, 0.06);
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.contact-hero-dot {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--secondary);
+  box-shadow: 0 0 0 5px rgba(255, 176, 0, 0.1);
+}
+
+.contact-hero h1 {
+  max-width: 650px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(52px, 6vw, 86px);
+  font-weight: 800;
+  line-height: 0.94;
+  letter-spacing: -4px;
+  text-shadow: 0 8px 35px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero h1 span {
+  display: block;
+  color: #ffffff;
+}
+
+.contact-hero h1 strong {
+  display: block;
+  color: var(--secondary);
+  font-weight: 800;
+  text-shadow:
+    0 0 30px rgba(255, 176, 0, 0.12),
+    0 8px 35px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero-content p {
+  max-width: 570px;
+  margin: 30px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.85;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.35);
+}
+
+.contact-hero-cta {
+  min-height: 50px;
+  margin-top: 32px;
+  padding: 0 18px 0 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  color: var(--black);
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.contact-hero-cta:hover {
+  color: #ffffff;
+  background: transparent;
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
+}
+
+.contact-hero-cta svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2.3;
+}
+
+.contact-hero-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-bottom: 27px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 17px;
+}
+
+.contact-hero-bottom span {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  white-space: nowrap;
+}
+
+.contact-hero-bottom span:first-child {
+  color: var(--secondary);
+}
+
+.contact-hero-floating-card {
+  position: absolute;
+  z-index: 4;
+  right: 40px;
+  top: 50%;
+  width: 285px;
+  min-height: 88px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  background: rgba(13, 9, 17, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(16px);
+}
+
+.contact-card-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  background: var(--secondary);
+}
+
+.contact-card-icon svg {
+  width: 19px;
+  height: 19px;
+  stroke-width: 2;
+}
+
+.contact-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-card-content small {
+  color: var(--secondary);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.contact-card-content strong {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.contact-card-arrow {
+  width: 15px;
+  height: 15px;
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  .contact-hero {
+    min-height: 720px;
+  }
+
+  .contact-hero-bg img {
+    object-position: 67% center;
+  }
+
+  .contact-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 6, 12, 0.96) 0%,
+        rgba(8, 6, 12, 0.88) 45%,
+        rgba(8, 6, 12, 0.58) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(8, 6, 12, 0.75) 0%,
+        transparent 55%
+      );
+  }
+
+  .contact-hero-container {
+    width: calc(100% - 32px);
+    min-height: 720px;
+  }
+
+  .contact-hero-top {
+    padding-top: 23px;
+  }
+
+  .contact-hero-breadcrumb {
+    gap: 7px;
+    font-size: 8px;
+  }
+
+  .contact-hero-breadcrumb svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .contact-hero-number {
+    font-size: 9px;
+  }
+
+  .contact-hero-content {
+    max-width: 100%;
+    padding: 55px 0 45px;
+  }
+
+  .contact-hero-eyebrow {
+    margin-bottom: 17px;
+    font-size: 8px;
+    letter-spacing: 1.35px;
+  }
+
+  .contact-hero-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .contact-hero h1 {
+    max-width: 350px;
+    font-size: 43px;
+    line-height: 0.98;
+    letter-spacing: -2.2px;
+  }
+
+  .contact-hero-content p {
+    max-width: 340px;
+    margin-top: 21px;
+    font-size: 11px;
+    line-height: 1.75;
+  }
+
+  .contact-hero-cta {
+    min-height: 45px;
+    margin-top: 24px;
+    padding: 0 15px 0 17px;
+    gap: 24px;
+    font-size: 9px;
+  }
+
+  .contact-hero-cta svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .contact-hero-bottom {
+    gap: 11px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    overflow: hidden;
+  }
+
+  .contact-hero-bottom span {
+    font-size: 5.5px;
+    letter-spacing: 0.75px;
+  }
+
+  .contact-hero-floating-card {
+    right: 16px;
+    top: auto;
+    bottom: 105px;
+    width: 245px;
+    min-height: 68px;
+    padding: 10px;
+    transform: none;
+  }
+
+  .contact-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-card-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .contact-card-content small {
+    font-size: 6px;
+  }
+
+  .contact-card-content strong {
+    font-size: 9px;
+  }
+
+  .contact-card-arrow {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  .contact-hero {
+    min-height: 650px;
+  }
+
+  .contact-hero-bg img {
+    object-position: center;
+  }
+
+  .contact-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 6, 12, 0.96) 0%,
+        rgba(8, 6, 12, 0.86) 35%,
+        rgba(8, 6, 12, 0.45) 68%,
+        rgba(8, 6, 12, 0.1) 100%
+      );
+  }
+
+  .contact-hero-container {
+    width: calc(100% - 40px);
+    min-height: 650px;
+  }
+
+  .contact-hero h1 {
+    max-width: 500px;
+    font-size: 54px;
+    letter-spacing: -2.6px;
+  }
+
+  .contact-hero-content p {
+    max-width: 440px;
+    font-size: 11px;
+  }
+
+  .contact-hero-floating-card {
+    right: 20px;
+    width: 235px;
+  }
+
+  .contact-hero-bottom {
+    gap: 14px;
+  }
+
+  .contact-hero-bottom span {
+    font-size: 6px;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  .contact-hero {
+    min-height: 650px;
+  }
+
+  .contact-hero-bg img {
+    object-position: center;
+  }
+
+  .contact-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 6, 12, 0.96) 0%,
+        rgba(8, 6, 12, 0.86) 34%,
+        rgba(8, 6, 12, 0.44) 67%,
+        rgba(8, 6, 12, 0.1) 100%
+      );
+  }
+
+  .contact-hero-container {
+    width: calc(100% - 48px);
+    min-height: 650px;
+  }
+
+  .contact-hero h1 {
+    max-width: 550px;
+    font-size: 60px;
+    letter-spacing: -3px;
+  }
+
+  .contact-hero-content p {
+    max-width: 480px;
+    font-size: 12px;
+  }
+
+  .contact-hero-floating-card {
+    right: 22px;
+    width: 250px;
+  }
+
+  .contact-hero-bottom {
+    gap: 18px;
+  }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .contact-hero {
+    min-height: 600px;
+  }
+
+  .contact-hero-container {
+    min-height: 600px;
+  }
+
+  .contact-hero-bg img {
+    object-position: center;
+  }
+
+  .contact-hero-content {
+    padding: 40px 0;
+  }
+
+  .contact-hero h1 {
+    font-size: 53px;
+  }
+
+  .contact-hero-content p {
+    margin-top: 18px;
+  }
+
+  .contact-hero-floating-card {
+    right: 20px;
+    width: 235px;
+  }
+
+  .contact-hero-bottom {
+    padding-bottom: 17px;
+  }
+}
+
+
+/* =========================================================
+   CONTACT — SECTION 02
+   REQUEST A QUOTE
+========================================================= */
+
+.quote-request-section {
+  position: relative;
+  padding: 120px 0;
+  background: var(--surface);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.quote-request-container {
+  width: min(1280px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 176, 0, 0.45);
+  border-radius: 999px;
+  background: rgba(255, 176, 0, 0.06);
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.section-badge-dot {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--secondary);
+  box-shadow: 0 0 0 5px rgba(255, 176, 0, 0.1);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.quote-request-heading {
+  max-width: 720px;
+  margin: 0 auto 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.quote-request-heading h2 {
+  margin: 24px 0 0;
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+}
+
+.quote-request-heading h2 span {
+  color: var(--secondary);
+}
+
+.quote-request-heading p {
+  max-width: 560px;
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   WORKSPACE
+========================================================= */
+
+.quote-request-workspace {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  align-items: stretch;
+  gap: 0;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.quote-request-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 680px;
+  padding: 32px;
+  background: var(--primary);
+  overflow: hidden;
+}
+
+.quote-request-side::before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  right: -260px;
+  bottom: -240px;
+  border: 1px solid rgba(255, 176, 0, 0.22);
+  border-radius: 50%;
+}
+
+.quote-request-side::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: -145px;
+  bottom: -135px;
+  border: 1px solid rgba(255, 176, 0, 0.14);
+  border-radius: 50%;
+}
+
+.quote-request-side-top {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote-request-side-top span {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.quote-request-side-top strong {
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+.quote-request-side-content {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  margin-bottom: 55px;
+}
+
+.quote-request-side-label {
+  color: var(--secondary);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.quote-request-side-content h3 {
+  max-width: 260px;
+  margin: 16px 0 0;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.quote-request-side-content h3 span {
+  color: var(--secondary);
+}
+
+.quote-request-side-content p {
+  max-width: 255px;
+  margin: 20px 0 0;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SIDE LIST
+========================================================= */
+
+.quote-request-side-list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.quote-request-side-list div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quote-request-side-list i {
+  width: 14px;
+  height: 14px;
+  color: var(--secondary);
+}
+
+.quote-request-side-list span {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.quote-request-form {
+  min-height: 680px;
+  padding: 42px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   FORM HEADER
+========================================================= */
+
+.quote-form-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border);
+}
+
+.quote-form-header span:first-child {
+  color: var(--secondary);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.quote-form-header h3 {
+  margin: 9px 0 0;
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.quote-form-required {
+  color: var(--text-muted);
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.quote-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px 20px;
+  padding-top: 30px;
+}
+
+.quote-form-field {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-form-full {
+  grid-column: 1 / -1;
+}
+
+.quote-form-field label {
+  margin-bottom: 9px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.quote-form-field input,
+.quote-form-field select,
+.quote-form-field textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  outline: none;
+  border-radius: 0;
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  transition:
+    border-color var(--transition),
+    background var(--transition);
+}
+
+.quote-form-field input,
+.quote-form-field select {
+  height: 46px;
+  padding: 0 14px;
+}
+
+.quote-form-field textarea {
+  min-height: 125px;
+  padding: 14px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.quote-form-field input::placeholder,
+.quote-form-field textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.quote-form-field select {
+  cursor: pointer;
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--primary) 50%),
+    linear-gradient(135deg, var(--primary) 50%, transparent 50%);
+  background-position:
+    calc(100% - 17px) 19px,
+    calc(100% - 12px) 19px;
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+}
+
+.quote-form-field input:focus,
+.quote-form-field select:focus,
+.quote-form-field textarea:focus {
+  border-color: var(--secondary);
+  background: var(--bg);
+}
+
+
+/* =========================================================
+   FORM FOOTER
+========================================================= */
+
+.quote-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid var(--border);
+}
+
+.quote-form-footer p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.quote-form-footer p i {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--secondary);
+}
+
+.quote-submit-button {
+  min-height: 48px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: var(--white);
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.quote-submit-button i {
+  width: 14px;
+  height: 14px;
+}
+
+.quote-submit-button:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark .quote-request-section {
+  background: #100c17;
+}
+
+html.dark .quote-request-heading h2 {
+  color: var(--white);
+}
+
+html.dark .quote-request-form {
+  background: #15101d;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .quote-form-header,
+html.dark .quote-form-footer {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .quote-form-header h3,
+html.dark .quote-form-field label {
+  color: var(--white);
+}
+
+html.dark .quote-form-field input,
+html.dark .quote-form-field select,
+html.dark .quote-form-field textarea {
+  background: #100c17;
+  border-color: rgba(255, 255, 255, 0.11);
+  color: var(--white);
+}
+
+html.dark .quote-form-field input:focus,
+html.dark .quote-form-field select:focus,
+html.dark .quote-form-field textarea:focus {
+  background: #15101d;
+}
+
+html.dark .quote-form-field select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--secondary) 50%),
+    linear-gradient(135deg, var(--secondary) 50%, transparent 50%);
+}
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  .quote-request-section {
+    padding: 80px 0;
+  }
+
+  .quote-request-container {
+    width: calc(100% - 32px);
+  }
+
+  .quote-request-heading {
+    margin-bottom: 45px;
+  }
+
+  .quote-request-heading h2 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  .quote-request-heading p {
+    font-size: 14px;
+  }
+
+  .quote-request-workspace {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-request-side {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .quote-request-side-content {
+    margin: 55px 0 35px;
+  }
+
+  .quote-request-side-content h3 {
+    font-size: 1.7rem;
+  }
+
+  .quote-request-side-list {
+    gap: 11px;
+  }
+
+  .quote-request-form {
+    min-height: auto;
+    padding: 25px 20px;
+  }
+
+  .quote-form-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .quote-form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .quote-form-full {
+    grid-column: auto;
+  }
+
+  .quote-form-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .quote-submit-button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD MINI
+   768px — 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  .quote-request-section {
+    padding: 100px 0;
+  }
+
+  .quote-request-container {
+    width: calc(100% - 50px);
+  }
+
+  .quote-request-heading {
+    margin-bottom: 55px;
+  }
+
+  .quote-request-workspace {
+    grid-template-columns: 270px 1fr;
+  }
+
+  .quote-request-side {
+    min-height: 700px;
+    padding: 25px;
+  }
+
+  .quote-request-form {
+    min-height: 700px;
+    padding: 30px;
+  }
+
+  .quote-form-grid {
+    gap: 20px 15px;
+  }
+
+  .quote-form-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .quote-submit-button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD PRO 11
+   821px — 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  .quote-request-section {
+    padding: 110px 0;
+  }
+
+  .quote-request-container {
+    width: calc(100% - 60px);
+  }
+
+  .quote-request-workspace {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .quote-request-side {
+    min-height: 680px;
+  }
+
+  .quote-request-form {
+    min-height: 680px;
+    padding: 35px;
+  }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .quote-request-section {
+    padding: 90px 0;
+  }
+
+  .quote-request-heading {
+    margin-bottom: 45px;
+  }
+
+  .quote-request-workspace {
+    grid-template-columns: 270px 1fr;
+  }
+
+  .quote-request-side {
+    min-height: 650px;
+  }
+
+  .quote-request-form {
+    min-height: 650px;
+    padding: 30px;
+  }
+
+}
+
+/* =========================================================
+   CONTACT — SECTION 03
+   QUOTE PROCESS
+========================================================= */
+
+.quote-process-section {
+  position: relative;
+  padding: 120px 0;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.quote-process-container {
+  width: min(1280px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.quote-process-heading {
+  max-width: 760px;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.quote-process-heading h2 {
+  margin: 20px 0 0;
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+}
+
+.quote-process-heading h2 span {
+  color: var(--secondary);
+}
+
+.quote-process-heading p {
+  max-width: 650px;
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   PROCESS GRID
+========================================================= */
+
+.quote-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+
+/* =========================================================
+   PROCESS CARD
+========================================================= */
+
+.quote-process-card {
+  position: relative;
+  min-height: 260px;
+  padding: 30px 25px 28px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.quote-process-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 176, 0, 0.35);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.quote-process-card-top {
+  position: relative;
+  min-height: 76px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   ICON BOX
+========================================================= */
+
+.quote-process-icon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(255, 176, 0, 0.1);
+  color: var(--secondary);
+  flex-shrink: 0;
+}
+
+.quote-process-icon i {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* =========================================================
+   LARGE BACKGROUND NUMBER
+========================================================= */
+
+.quote-process-number {
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  color: rgba(225, 229, 235, 0.75);
+  font-size: 3.7rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -3px;
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.quote-process-content {
+  position: relative;
+  z-index: 2;
+  max-width: 260px;
+  margin-top: 15px;
+}
+
+.quote-process-content h3 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.quote-process-content p {
+  margin: 12px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.quote-process-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.quote-process-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 45px;
+  padding: 0 22px;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.quote-process-link i {
+  width: 14px;
+  height: 14px;
+}
+
+.quote-process-link:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark .quote-process-section {
+  background: #0d0912;
+}
+
+html.dark .quote-process-heading h2 {
+  color: var(--white);
+}
+
+html.dark .quote-process-card {
+  background: #0d0912;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+html.dark .quote-process-card:hover {
+  border-color: rgba(255, 176, 0, 0.35);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
+}
+
+html.dark .quote-process-content h3 {
+  color: var(--white);
+}
+
+html.dark .quote-process-number {
+  color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark .quote-process-icon {
+  background: rgba(255, 176, 0, 0.08);
+}
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  .quote-process-section {
+    padding: 80px 0;
+  }
+
+  .quote-process-container {
+    width: calc(100% - 32px);
+  }
+
+  .quote-process-heading {
+    margin-bottom: 45px;
+  }
+
+  .quote-process-heading h2 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  .quote-process-heading p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .quote-process-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .quote-process-card {
+    min-height: 220px;
+    padding: 25px 22px;
+  }
+
+  .quote-process-card-top {
+    min-height: 70px;
+  }
+
+  .quote-process-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .quote-process-number {
+    top: -6px;
+    right: 0;
+    font-size: 3.3rem;
+  }
+
+  .quote-process-content {
+    max-width: 280px;
+    margin-top: 12px;
+  }
+
+  .quote-process-content h3 {
+    font-size: 17px;
+  }
+
+  .quote-process-content p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .quote-process-bottom {
+    margin-top: 35px;
+  }
+
+  .quote-process-link {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD MINI
+   768px — 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  .quote-process-section {
+    padding: 100px 0;
+  }
+
+  .quote-process-container {
+    width: calc(100% - 50px);
+  }
+
+  .quote-process-heading {
+    margin-bottom: 50px;
+  }
+
+  .quote-process-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .quote-process-heading p {
+    font-size: 14px;
+  }
+
+  .quote-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .quote-process-card {
+    min-height: 245px;
+    padding: 25px 22px;
+  }
+
+  .quote-process-content {
+    max-width: 270px;
+  }
+
+  .quote-process-content h3 {
+    font-size: 17px;
+  }
+
+  .quote-process-content p {
+    font-size: 13px;
+  }
+
+  .quote-process-bottom {
+    margin-top: 40px;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD PRO 11
+   821px — 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  .quote-process-section {
+    padding: 110px 0;
+  }
+
+  .quote-process-container {
+    width: calc(100% - 60px);
+  }
+
+  .quote-process-heading {
+    margin-bottom: 55px;
+  }
+
+  .quote-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .quote-process-card {
+    min-height: 250px;
+  }
+
+  .quote-process-content {
+    max-width: 300px;
+  }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .quote-process-section {
+    padding: 80px 0;
+  }
+
+  .quote-process-heading {
+    margin-bottom: 45px;
+  }
+
+  .quote-process-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .quote-process-heading p {
+    font-size: 14px;
+  }
+
+  .quote-process-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .quote-process-card {
+    min-height: 230px;
+    padding: 22px 18px;
+  }
+
+  .quote-process-content {
+    max-width: 210px;
+  }
+
+  .quote-process-content h3 {
+    font-size: 15px;
+  }
+
+  .quote-process-content p {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .quote-process-number {
+    font-size: 3.2rem;
+  }
+
+  .quote-process-bottom {
+    margin-top: 35px;
+  }
+
+}
+
+
+/* =========================================================
+   CONTACT — SECTION 04
+   CONTACT DETAILS
+========================================================= */
+
+.contact-details-section {
+  position: relative;
+  padding: 120px 0;
+  background: var(--surface);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.contact-details-container {
+  width: min(1280px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.contact-details-heading {
+  max-width: 720px;
+  margin: 0 auto 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-details-heading h2 {
+  margin: 24px 0 0;
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+}
+
+.contact-details-heading h2 span {
+  color: var(--secondary);
+}
+
+.contact-details-heading p {
+  max-width: 550px;
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.contact-details-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  min-height: 500px;
+}
+
+
+/* =========================================================
+   INTRO PANEL
+========================================================= */
+
+.contact-details-intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  background: var(--primary);
+  overflow: hidden;
+}
+
+.contact-details-intro::before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  right: -260px;
+  bottom: -240px;
+  border: 1px solid rgba(255, 176, 0, 0.25);
+  border-radius: 50%;
+}
+
+.contact-details-intro::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  right: -165px;
+  bottom: -150px;
+  border: 1px solid rgba(255, 176, 0, 0.14);
+  border-radius: 50%;
+}
+
+.contact-details-intro-top {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-details-intro-top span {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.contact-details-intro-main {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.contact-details-intro-main > span {
+  color: var(--secondary);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.contact-details-intro-main h3 {
+  max-width: 300px;
+  margin: 17px 0 0;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.contact-details-intro-main h3 span {
+  color: var(--secondary);
+}
+
+.contact-details-intro-main p {
+  max-width: 260px;
+  margin: 20px 0 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+
+
+/* =========================================================
+   MARK
+========================================================= */
+
+.contact-details-intro-mark {
+  position: absolute;
+  right: 30px;
+  bottom: 28px;
+  z-index: 2;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 176, 0, 0.35);
+  border-radius: 50%;
+}
+
+.contact-details-intro-mark span {
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   DETAILS LIST
+========================================================= */
+
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.contact-detail-item {
+  position: relative;
+  flex: 1;
+  min-height: 125px;
+  display: grid;
+  grid-template-columns: 55px 1fr 25px;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 30px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  transition:
+    background var(--transition),
+    padding var(--transition);
+}
+
+.contact-detail-item:last-child {
+  border-bottom: 0;
+}
+
+.contact-detail-item:hover {
+  background: var(--surface);
+  padding-left: 35px;
+}
+
+.contact-detail-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--primary);
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+}
+
+.contact-detail-item:hover .contact-detail-icon {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--primary);
+}
+
+.contact-detail-icon i {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-detail-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-detail-content > span {
+  color: var(--secondary);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.contact-detail-content strong {
+  margin-top: 7px;
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.contact-detail-content small {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contact-detail-arrow {
+  width: 16px;
+  height: 16px;
+  color: var(--primary);
+  transition:
+    color var(--transition),
+    transform var(--transition);
+}
+
+.contact-detail-item:hover .contact-detail-arrow {
+  color: var(--secondary);
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark .contact-details-section {
+  background: #100c17;
+}
+
+html.dark .contact-details-heading h2 {
+  color: var(--white);
+}
+
+html.dark .contact-details-list {
+  background: #15101d;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .contact-detail-item {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .contact-detail-item:hover {
+  background: #1b1524;
+}
+
+html.dark .contact-detail-icon {
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+}
+
+html.dark .contact-detail-content strong {
+  color: var(--white);
+}
+
+html.dark .contact-detail-arrow {
+  color: var(--white);
+}
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  .contact-details-section {
+    padding: 80px 0;
+  }
+
+  .contact-details-container {
+    width: calc(100% - 32px);
+  }
+
+  .contact-details-heading {
+    margin-bottom: 45px;
+  }
+
+  .contact-details-heading h2 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  .contact-details-heading p {
+    font-size: 14px;
+  }
+
+  .contact-details-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-details-intro {
+    min-height: 360px;
+    padding: 25px;
+  }
+
+  .contact-details-intro-main {
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+
+  .contact-details-intro-main h3 {
+    font-size: 1.7rem;
+  }
+
+  .contact-details-intro-mark {
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .contact-detail-item {
+    min-height: 105px;
+    grid-template-columns: 48px 1fr 18px;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .contact-detail-item:hover {
+    padding-left: 20px;
+  }
+
+  .contact-detail-icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .contact-detail-content strong {
+    font-size: 11px;
+  }
+
+  .contact-detail-content small {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD MINI
+   768px — 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  .contact-details-section {
+    padding: 100px 0;
+  }
+
+  .contact-details-container {
+    width: calc(100% - 50px);
+  }
+
+  .contact-details-heading {
+    margin-bottom: 60px;
+  }
+
+  .contact-details-layout {
+    grid-template-columns: 280px 1fr;
+  }
+
+  .contact-details-intro {
+    padding: 25px;
+  }
+
+  .contact-details-intro-main h3 {
+    font-size: 1.7rem;
+  }
+
+  .contact-detail-item {
+    grid-template-columns: 48px 1fr 20px;
+    gap: 15px;
+    padding: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD PRO 11
+   821px — 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  .contact-details-section {
+    padding: 110px 0;
+  }
+
+  .contact-details-container {
+    width: calc(100% - 60px);
+  }
+
+  .contact-details-layout {
+    grid-template-columns: 310px 1fr;
+  }
+
+  .contact-details-intro {
+    padding: 28px;
+  }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .contact-details-section {
+    padding: 90px 0;
+  }
+
+  .contact-details-heading {
+    margin-bottom: 50px;
+  }
+
+  .contact-details-layout {
+    grid-template-columns: 270px 1fr;
+  }
+
+  .contact-details-intro {
+    min-height: 450px;
+    padding: 25px;
+  }
+
+  .contact-detail-item {
+    min-height: 112px;
+  }
+
+}
+
+/* =========================================================
+   CONTACT — SECTION 05
+   FAQ
+========================================================= */
+
+.contact-faq-section {
+  position: relative;
+  padding: 120px 0;
+  background: var(--surface);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.contact-faq-container {
+  width: min(1000px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.contact-faq-heading {
+  max-width: 700px;
+  margin: 0 auto 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-faq-heading h2 {
+  margin: 24px 0 0;
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+}
+
+.contact-faq-heading h2 span {
+  color: var(--secondary);
+}
+
+.contact-faq-heading p {
+  max-width: 540px;
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   FAQ LIST
+========================================================= */
+
+.contact-faq-list {
+  border-top: 1px solid var(--border);
+}
+
+.contact-faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.contact-faq-question {
+  width: 100%;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--primary);
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.contact-faq-question i {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   ANSWER
+========================================================= */
+
+.contact-faq-answer {
+  max-width: 720px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    padding 0.35s ease;
+}
+
+.contact-faq-answer p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.contact-faq-item.active .contact-faq-answer {
+  max-height: 180px;
+  padding: 0 55px 25px 0;
+  opacity: 1;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.contact-faq-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.contact-faq-bottom > span {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.contact-faq-bottom a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 18px;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.contact-faq-bottom a i {
+  width: 14px;
+  height: 14px;
+}
+
+.contact-faq-bottom a:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark .contact-faq-section {
+  background: #100c17;
+}
+
+html.dark .contact-faq-heading h2 {
+  color: var(--white);
+}
+
+html.dark .contact-faq-question {
+  color: var(--white);
+}
+
+html.dark .contact-faq-list,
+html.dark .contact-faq-item {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  .contact-faq-section {
+    padding: 80px 0;
+  }
+
+  .contact-faq-container {
+    width: calc(100% - 32px);
+  }
+
+  .contact-faq-heading {
+    margin-bottom: 45px;
+  }
+
+  .contact-faq-heading h2 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  .contact-faq-heading p {
+    font-size: 14px;
+  }
+
+  .contact-faq-question {
+    min-height: 72px;
+    font-size: 11px;
+    gap: 15px;
+  }
+
+  .contact-faq-answer p {
+    font-size: 14px;
+  }
+
+  .contact-faq-item.active .contact-faq-answer {
+    padding: 0 30px 22px 0;
+  }
+
+  .contact-faq-bottom {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-faq-bottom a {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD MINI
+   768px — 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  .contact-faq-section {
+    padding: 100px 0;
+  }
+
+  .contact-faq-container {
+    width: calc(100% - 50px);
+  }
+
+  .contact-faq-heading {
+    margin-bottom: 55px;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD PRO 11
+   821px — 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  .contact-faq-section {
+    padding: 110px 0;
+  }
+
+  .contact-faq-container {
+    width: calc(100% - 60px);
+  }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .contact-faq-section {
+    padding: 90px 0;
+  }
+
+  .contact-faq-heading {
+    margin-bottom: 50px;
+  }
+
+}
+
+/* =========================================================
+   CONTACT — SECTION 05
+   FINAL CTA
+========================================================= */
+
+.contact-final-section {
+  position: relative;
+  padding: 120px 0;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.contact-final-container {
+  width: min(1280px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   CTA CARD
+========================================================= */
+
+.contact-final-card {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 38px;
+  background: var(--primary);
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.contact-final-top {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-final-top span {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.contact-final-top span:last-child {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.contact-final-content {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-final-content .section-tag {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-final-content h2 {
+  max-width: 700px;
+  margin: 25px 0 0;
+  color: var(--white);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -2.5px;
+}
+
+.contact-final-content h2 span {
+  color: var(--secondary);
+}
+
+.contact-final-content p {
+  max-width: 530px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.contact-final-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.contact-final-primary,
+.contact-final-secondary {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 23px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.contact-final-primary {
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: var(--primary);
+}
+
+.contact-final-primary:hover {
+  background: var(--white);
+  border-color: var(--white);
+  transform: translateY(-3px);
+}
+
+.contact-final-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.contact-final-secondary:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+  transform: translateY(-3px);
+}
+
+.contact-final-primary i,
+.contact-final-secondary i {
+  width: 14px;
+  height: 14px;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.contact-final-bottom {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.contact-final-bottom span {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.contact-final-bottom div {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--secondary);
+}
+
+.contact-final-bottom strong {
+  margin-left: auto;
+  color: var(--secondary);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================================================
+   DECORATIVE CIRCLES
+========================================================= */
+
+.contact-final-circle {
+  position: absolute;
+  border: 1px solid rgba(255, 176, 0, 0.16);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact-final-circle-one {
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  right: -280px;
+  transform: translateY(-50%);
+}
+
+.contact-final-circle-two {
+  width: 390px;
+  height: 390px;
+  top: 50%;
+  right: -175px;
+  border-color: rgba(255, 176, 0, 0.25);
+  transform: translateY(-50%);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark .contact-final-section {
+  background: #0d0912;
+}
+
+html.dark .contact-final-card {
+  background: #171021;
+}
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  .contact-final-section {
+    padding: 80px 0;
+  }
+
+  .contact-final-container {
+    width: calc(100% - 32px);
+  }
+
+  .contact-final-card {
+    min-height: 500px;
+    padding: 24px 20px;
+  }
+
+  .contact-final-content h2 {
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
+  }
+
+  .contact-final-content p {
+    font-size: 15px;
+  }
+
+  .contact-final-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .contact-final-primary,
+  .contact-final-secondary {
+    width: 100%;
+  }
+
+  .contact-final-bottom {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .contact-final-bottom strong {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .contact-final-circle-one {
+    width: 390px;
+    height: 390px;
+    right: -250px;
+  }
+
+  .contact-final-circle-two {
+    width: 250px;
+    height: 250px;
+    right: -165px;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD MINI
+   768px — 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  .contact-final-section {
+    padding: 100px 0;
+  }
+
+  .contact-final-container {
+    width: calc(100% - 50px);
+  }
+
+  .contact-final-card {
+    min-height: 470px;
+    padding: 28px;
+  }
+
+  .contact-final-content h2 {
+    font-size: 3rem;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD PRO 11
+   821px — 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  .contact-final-section {
+    padding: 110px 0;
+  }
+
+  .contact-final-container {
+    width: calc(100% - 60px);
+  }
+
+  .contact-final-card {
+    min-height: 480px;
+    padding: 30px;
+  }
+
+  .contact-final-content h2 {
+    font-size: 3.2rem;
+  }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .contact-final-section {
+    padding: 90px 0;
+  }
+
+  .contact-final-card {
+    min-height: 400px;
+  }
+
+  .contact-final-content h2 {
+    font-size: 2.8rem;
+  }
+
+  .contact-final-content p {
+    margin-top: 16px;
+  }
+
+  .contact-final-actions {
+    margin-top: 24px;
+  }
+
+}
+
+/* =========================================================
+   KITSTORM TYPOGRAPHY SCALE
+   CONTACT PAGE
+   Readability upgrades only
+========================================================= */
+
+.contact-quote-hero-content > p,
+.quote-request-heading p,
+.quote-process-heading p,
+.contact-details-heading p,
+.contact-faq-heading p {
+  font-size: 15px;
+}
+
+.quote-request-side-content p,
+.contact-quote-info-main p,
+.contact-details-intro-main p {
+  font-size: 14px;
+}
+
+.quote-request-side-list span,
+.quote-form-field label,
+.quote-form-footer p,
+.quote-process-note,
+.contact-faq-bottom > span {
+  font-size: 13px;
+}
+
+.quote-form-field input,
+.quote-form-field select,
+.quote-form-field textarea {
+  font-size: 15px;
+}
+
+.quote-submit-button,
+.quote-process-link,
+.contact-faq-bottom a {
+  font-size: 13px;
+}
+
+.quote-process-content h3 {
+  font-size: 17px;
+}
+
+.quote-process-content p,
+.contact-detail-content small,
+.contact-faq-answer p {
+  font-size: 14px;
+}
+
+.contact-detail-content strong {
+  font-size: 15px;
+}
+
+.contact-faq-question {
+  font-size: 15px;
+}
+
+/* Samsung Galaxy S8+ */
+@media screen and (min-width: 360px) and (max-width: 740px) {
+  .contact-quote-hero-content > p,
+  .quote-request-heading p,
+  .quote-process-heading p,
+  .contact-details-heading p,
+  .contact-faq-heading p {
+    font-size: 14px;
+  }
+
+  .contact-quote-hero-points span,
+  .quote-request-side-list span,
+  .quote-form-field label,
+  .quote-form-footer p,
+  .quote-process-note,
+  .contact-faq-bottom > span {
+    font-size: 13px;
+  }
+
+  .contact-quote-info-main p,
+  .quote-request-side-content p,
+  .quote-process-content p,
+  .contact-details-intro-main p,
+  .contact-detail-content small,
+  .contact-faq-answer p {
+    font-size: 13px;
+  }
+
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea {
+    font-size: 14px;
+  }
+
+  .quote-process-content h3,
+  .contact-detail-content strong,
+  .contact-faq-question {
+    font-size: 14px;
+  }
+
+  .quote-submit-button,
+  .quote-process-link,
+  .contact-faq-bottom a {
+    font-size: 13px;
+  }
+}
+
+/* iPad Mini */
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .contact-quote-hero-content > p,
+  .quote-request-heading p,
+  .quote-process-heading p,
+  .contact-details-heading p,
+  .contact-faq-heading p {
+    font-size: 14px;
+  }
+
+  .quote-request-side-list span,
+  .quote-form-field label,
+  .quote-form-footer p,
+  .quote-process-note,
+  .contact-faq-bottom > span {
+    font-size: 13px;
+  }
+
+  .quote-request-side-content p,
+  .contact-quote-info-main p,
+  .quote-process-content p,
+  .contact-details-intro-main p,
+  .contact-detail-content small,
+  .contact-faq-answer p {
+    font-size: 14px;
+  }
+
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea {
+    font-size: 14px;
+  }
+}
+
+/* iPad Pro 11 */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .contact-quote-hero-content > p,
+  .quote-request-heading p,
+  .quote-process-heading p,
+  .contact-details-heading p,
+  .contact-faq-heading p {
+    font-size: 15px;
+  }
+
+  .quote-request-side-content p,
+  .contact-quote-info-main p,
+  .quote-process-content p,
+  .contact-details-intro-main p,
+  .contact-detail-content small,
+  .contact-faq-answer p {
+    font-size: 14px;
+  }
+
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea {
+    font-size: 15px;
+  }
+}
+
+/* Nest Hub */
+@media screen and (width: 1024px) and (height: 600px) {
+  .contact-quote-hero-content > p,
+  .quote-request-heading p,
+  .quote-process-heading p,
+  .contact-details-heading p,
+  .contact-faq-heading p {
+    font-size: 14px;
+  }
+
+  .quote-request-side-content p,
+  .contact-quote-info-main p,
+  .quote-process-content p,
+  .contact-details-intro-main p,
+  .contact-detail-content small,
+  .contact-faq-answer p {
+    font-size: 13px;
+  }
+
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea {
+    font-size: 14px;
+  }
+}
+/* =========================================================
+   KITSTORM MASTER TYPOGRAPHY
+   CONTACT — MATCH ABOUT PAGE
+========================================================= */
+
+.contact-hero h1 { font-size: 3.5rem; }
+.contact-hero-content p,
+.quote-request-heading p,
+.quote-process-heading p,
+.contact-details-heading p,
+.contact-faq-heading p { font-size: 15px; }
+
+.contact-hero-cta,
+.quote-submit-button,
+.quote-process-link,
+.contact-faq-bottom a { font-size: 13px; }
+
+.quote-request-side-content p,
+.quote-process-content p,
+.contact-details-intro-main p,
+.contact-detail-content small,
+.contact-faq-answer p,
+.contact-final-content p { font-size: 14px; }
+
+.quote-request-side-list span,
+.quote-form-field label,
+.quote-form-footer p,
+.quote-process-note,
+.contact-faq-bottom > span,
+.contact-detail-content strong,
+.contact-faq-question { font-size: 13px; }
+
+.quote-form-field input,
+.quote-form-field select,
+.quote-form-field textarea { font-size: 15px; }
+
+.quote-process-content h3 { font-size: 17px; }
+.contact-details-heading h2,
+.contact-faq-heading h2,
+.quote-request-heading h2 { font-size: 2.5rem; }
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+  .contact-hero h1 { font-size: 3.5rem; }
+  .contact-hero-content p,
+  .quote-request-heading p,
+  .quote-process-heading p,
+  .contact-details-heading p,
+  .contact-faq-heading p { font-size: 14px; }
+  .quote-request-side-content p,
+  .quote-process-content p,
+  .contact-details-intro-main p,
+  .contact-detail-content small,
+  .contact-faq-answer p,
+  .contact-final-content p { font-size: 13px; }
+  .quote-process-content h3,
+  .contact-detail-content strong,
+  .contact-faq-question { font-size: 14px; }
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea { font-size: 14px; }
+}
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .contact-hero h1 { font-size: 3.5rem; }
+  .contact-hero-content p,
+  .quote-request-heading p,
+  .quote-process-heading p,
+  .contact-details-heading p,
+  .contact-faq-heading p { font-size: 14px; }
+  .quote-request-side-content p,
+  .quote-process-content p,
+  .contact-details-intro-main p,
+  .contact-detail-content small,
+  .contact-faq-answer p,
+  .contact-final-content p { font-size: 14px; }
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea { font-size: 14px; }
+}
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .contact-hero h1 { font-size: 3.5rem; }
+  .contact-hero-content p,
+  .quote-request-heading p,
+  .quote-process-heading p,
+  .contact-details-heading p,
+  .contact-faq-heading p { font-size: 15px; }
+  .quote-request-side-content p,
+  .quote-process-content p,
+  .contact-details-intro-main p,
+  .contact-detail-content small,
+  .contact-faq-answer p,
+  .contact-final-content p { font-size: 14px; }
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea { font-size: 15px; }
+}
+@media screen and (width: 1024px) and (height: 600px) {
+  .contact-hero h1 { font-size: 3.5rem; }
+  .contact-hero-content p,
+  .quote-request-heading p,
+  .quote-process-heading p,
+  .contact-details-heading p,
+  .contact-faq-heading p { font-size: 14px; }
+  .quote-request-side-content p,
+  .quote-process-content p,
+  .contact-details-intro-main p,
+  .contact-detail-content small,
+  .contact-faq-answer p,
+  .contact-final-content p { font-size: 13px; }
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea { font-size: 14px; }
+}

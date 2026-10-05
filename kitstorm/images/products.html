@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="brand">
+            <img src="images/kitstorm logo.png" alt="KitStorm" />
+
+            <div class="brand-content">
+              <span class="brand-name">
+                <span class="brand-kit">KIT</span
+                ><span class="brand-storm">STORM</span>
+              </span>
+              <small>TEAMWEAR • CUSTOM • PERFORMANCE</small>
+            </div>
+          </a>
+
+          <div class="nav-menu" id="navMenu">
+            <div class="nav-dropdown">
+              <button
+                class="nav-link nav-dropdown-toggle"
+                id="homeDropdownToggle"
+                type="button"
+              >
+                Home
+                <i data-lucide="chevron-down"></i>
+              </button>
+
+              <div class="dropdown-menu">
+                <a href="index.html">Home 1</a>
+                <a href="index2.html">Home 2</a>
+              </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="customorder.html" class="nav-link">Custom Order</a>
+            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+
+          <div class="nav-actions">
+            <button
+              class="nav-icon-btn"
+              id="rtlToggle"
+              type="button"
+              aria-label="Toggle RTL"
+            >
+              <i data-lucide="arrow-left-right"></i>
+            </button>
+
+            <button
+              class="nav-icon-btn"
+              id="themeToggle"
+              type="button"
+              aria-label="Toggle theme"
+            >
+              <i data-lucide="moon"></i>
+            </button>
+
+            <a href="customorder.html" class="quote-btn">
+              <span>Get a Quote</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <button
+              class="menu-toggle"
+              id="menuToggle"
+              type="button"
+              aria-label="Open menu"
+            >
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+
+<!-- =========================================================
+     PROJECTS PAGE
+     Custom Team Jersey & Sports Apparel Printer
+     ========================================================= -->
+
+
+<!-- =========================================================
+     HERO SECTION
+     ========================================================= -->
+
+<section class="team-projects-hero">
+
+  <div class="team-projects-hero-overlay"></div>
+
+  <div class="team-projects-hero-container">
+
+    <div class="team-projects-hero-content">
+
+      <div class="section-badge">
+        <span class="section-badge-dot"></span>
+        Custom Teamwear
+      </div>
+
+      <h1 class="team-projects-hero-title">
+        Built for Teams.
+        <span>Made to Perform.</span>
+      </h1>
+
+      <p class="team-projects-hero-description">
+        Custom jerseys, match kits, training wear, and sports
+        apparel designed around your team's colors, identity,
+        and game-day needs.
+      </p>
+
+      <a
+        href="#projects-collection"
+        class="team-projects-hero-button"
+      >
+        <span>Explore Teamwear</span>
+
+        <span class="team-projects-hero-button-icon">
+          <i data-lucide="arrow-right"></i>
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCTS / TEAMWEAR COLLECTION
+     ========================================================= -->
+
+<section
+  class="team-projects"
+  id="projects-collection"
+>
+
+  <div class="team-projects-container">
+
+    <!-- SECTION HEADING -->
+
+    <div class="team-projects-heading">
+
+      <div class="section-badge">
+        <span class="section-badge-dot"></span>
+        Our Collection
+      </div>
+
+      <h2 class="team-projects-title">
+        Find Your Team's
+        <span>Perfect Kit.</span>
+      </h2>
+
+      <p class="team-projects-intro">
+        Browse custom sports apparel by sport and apparel type.
+        Choose the pieces that fit your squad, club, school,
+        or tournament.
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         FILTERS
+         ===================================================== -->
+
+    <div class="team-projects-filters">
+
+      <!-- SPORT FILTER -->
+
+      <div class="team-projects-filter-group">
+
+        <div class="team-projects-filter-heading">
+
+          <span class="team-projects-filter-label">
+            Sport
+          </span>
+
+          <span class="team-projects-filter-subtext">
+            Browse by game
+          </span>
+
+        </div>
+
+
+        <div class="team-projects-filter-list">
+
+          <button
+            type="button"
+            class="team-projects-filter-button is-active"
+            data-sport="all"
+          >
+            All Sports
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-filter-button"
+            data-sport="football"
+          >
+            Football
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-filter-button"
+            data-sport="cricket"
+          >
+            Cricket
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-filter-button"
+            data-sport="basketball"
+          >
+            Basketball
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-filter-button"
+            data-sport="volleyball"
+          >
+            Volleyball
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-filter-button"
+            data-sport="running"
+          >
+            Running
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="team-projects-filter-divider"></div>
+
+
+      <!-- APPAREL TYPE FILTER -->
+
+      <div class="team-projects-filter-group">
+
+        <div class="team-projects-filter-heading">
+
+          <span class="team-projects-filter-label">
+            Apparel Type
+          </span>
+
+          <span class="team-projects-filter-subtext">
+            Choose your kit
+          </span>
+
+        </div>
+
+
+        <div class="team-projects-filter-list">
+
+          <button
+            type="button"
+            class="team-projects-type-button is-active"
+            data-type="all"
+          >
+            All Apparel
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-type-button"
+            data-type="jerseys"
+          >
+            Jerseys
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-type-button"
+            data-type="shorts"
+          >
+            Shorts
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-type-button"
+            data-type="training"
+          >
+            Training Wear
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-type-button"
+            data-type="jackets"
+          >
+            Jackets
+          </button>
+
+          <button
+            type="button"
+            class="team-projects-type-button"
+            data-type="accessories"
+          >
+            Accessories
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FILTER TOOLBAR
+         ===================================================== -->
+
+    <div class="team-projects-toolbar">
+
+      <p class="team-projects-count">
+        Showing
+        <strong id="team-projects-count">12</strong>
+        products
+      </p>
+
+      <button
+        type="button"
+        class="team-projects-clear"
+        id="team-projects-clear"
+      >
+        <i data-lucide="rotate-ccw"></i>
+        Reset Filters
+      </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         PRODUCT GRID
+         ===================================================== -->
+
+    <div
+      class="team-projects-grid"
+      id="team-projects-grid"
+    ></div>
+
+
+    <!-- =====================================================
+         EMPTY STATE
+         ===================================================== -->
+
+    <div
+      class="team-projects-empty"
+      id="team-projects-empty"
+      hidden
+    >
+
+      <div class="team-projects-empty-icon">
+        <i data-lucide="search-x"></i>
+      </div>
+
+      <h3>
+        No teamwear found
+      </h3>
+
+      <p>
+        Try another sport or apparel type to explore
+        the collection.
+      </p>
+
+      <button
+        type="button"
+        class="team-projects-reset"
+        id="team-projects-reset"
+      >
+        View All Teamwear
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SHOP BY SPORT
+     ========================================================= -->
+
+<section
+  class="team-shop-by-sport"
+  id="shop-by-sport"
+>
+
+  <div class="team-shop-by-sport-container">
+
+
+    <!-- SECTION HEADING -->
+
+    <div class="team-shop-by-sport-heading">
+
+      <div class="section-badge">
+        <span class="section-badge-dot"></span>
+        Shop by Sport
+      </div>
+
+      <h2 class="team-shop-by-sport-title">
+        Every Sport Has
+        <span>Its Own Identity.</span>
+      </h2>
+
+      <p class="team-shop-by-sport-intro">
+        From match-day jerseys to coordinated training apparel,
+        build a consistent team look designed for the way you play.
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         SPORT CARDS
+         ===================================================== -->
+
+    <div class="team-shop-by-sport-grid">
+
+
+      <!-- FOOTBALL -->
+
+      <button
+        type="button"
+        class="team-shop-by-sport-card"
+        data-shop-sport="football"
+      >
+
+        <div class="team-shop-by-sport-image-wrap">
+
+          <img
+            src="images/football-teamwear.jpeg"
+            alt="Custom football teamwear"
+            class="team-shop-by-sport-image"
+            loading="lazy"
+          />
+
+          <span class="team-shop-by-sport-number">
+            01
+          </span>
+
+        </div>
+
+
+        <div class="team-shop-by-sport-content">
+
+          <span class="team-shop-by-sport-label">
+            Football
+          </span>
+
+          <h3 class="team-shop-by-sport-name">
+            Match Kits,
+            <span>Made to Stand Out.</span>
+          </h3>
+
+          <p>
+            Custom jerseys, shorts, warm-ups, and
+            coordinated club apparel for every fixture.
+          </p>
+
+          <span class="team-shop-by-sport-link">
+            Explore Football
+            <i data-lucide="arrow-up-right"></i>
+          </span>
+
+        </div>
+
+      </button>
+
+
+      <!-- CRICKET -->
+
+      <button
+        type="button"
+        class="team-shop-by-sport-card"
+        data-shop-sport="cricket"
+      >
+
+        <div class="team-shop-by-sport-image-wrap">
+
+          <img
+            src="images/cricket-teamwear.jpeg"
+            alt="Custom cricket teamwear"
+            class="team-shop-by-sport-image"
+            loading="lazy"
+          />
+
+          <span class="team-shop-by-sport-number">
+            02
+          </span>
+
+        </div>
+
+
+        <div class="team-shop-by-sport-content">
+
+          <span class="team-shop-by-sport-label">
+            Cricket
+          </span>
+
+          <h3 class="team-shop-by-sport-name">
+            Club Colors,
+            <span>Game-Day Ready.</span>
+          </h3>
+
+          <p>
+            Personalized cricket shirts, training tops,
+            caps, and team layers built around your identity.
+          </p>
+
+          <span class="team-shop-by-sport-link">
+            Explore Cricket
+            <i data-lucide="arrow-up-right"></i>
+          </span>
+
+        </div>
+
+      </button>
+
+
+      <!-- BASKETBALL -->
+
+      <button
+        type="button"
+        class="team-shop-by-sport-card"
+        data-shop-sport="basketball"
+      >
+
+        <div class="team-shop-by-sport-image-wrap">
+
+          <img
+            src="images/basketball-teamwear.jpeg"
+            alt="Custom basketball teamwear"
+            class="team-shop-by-sport-image"
+            loading="lazy"
+          />
+
+          <span class="team-shop-by-sport-number">
+            03
+          </span>
+
+        </div>
+
+
+        <div class="team-shop-by-sport-content">
+
+          <span class="team-shop-by-sport-label">
+            Basketball
+          </span>
+
+          <h3 class="team-shop-by-sport-name">
+            Bold Numbers,
+            <span>Clean Finishes.</span>
+          </h3>
+
+          <p>
+            Performance jerseys, shorts, warm-ups,
+            and personalized basketball team apparel.
+          </p>
+
+          <span class="team-shop-by-sport-link">
+            Explore Basketball
+            <i data-lucide="arrow-up-right"></i>
+          </span>
+
+        </div>
+
+      </button>
+
+
+      <!-- VOLLEYBALL -->
+
+      <button
+        type="button"
+        class="team-shop-by-sport-card"
+        data-shop-sport="volleyball"
+      >
+
+        <div class="team-shop-by-sport-image-wrap">
+
+          <img
+            src="images/volleyball-teamwear.jpeg"
+            alt="Custom volleyball teamwear"
+            class="team-shop-by-sport-image"
+            loading="lazy"
+          />
+
+          <span class="team-shop-by-sport-number">
+            04
+          </span>
+
+        </div>
+
+
+        <div class="team-shop-by-sport-content">
+
+          <span class="team-shop-by-sport-label">
+            Volleyball
+          </span>
+
+          <h3 class="team-shop-by-sport-name">
+            Move Together,
+            <span>Look Together.</span>
+          </h3>
+
+          <p>
+            Custom tops, shorts, warm-ups, and coordinated
+            apparel for clubs and school teams.
+          </p>
+
+          <span class="team-shop-by-sport-link">
+            Explore Volleyball
+            <i data-lucide="arrow-up-right"></i>
+          </span>
+
+        </div>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FEATURED PRINTING
+     ========================================================= -->
+
+<section
+  class="team-featured"
+  id="featured-printing"
+>
+
+  <div class="team-featured-container">
+
+
+    <!-- SECTION HEADING -->
+
+    <div class="team-featured-heading">
+
+      <div class="section-badge">
+        <span class="section-badge-dot"></span>
+        Why Teams Choose Us
+      </div>
+
+      <h2 class="team-featured-title">
+        Your Design In,
+        <span>Your Team Out There.</span>
+      </h2>
+
+      <p class="team-featured-intro">
+        We combine sharp team branding, performance-focused
+        apparel, and dependable printing for a finished kit
+        your players can wear with confidence.
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN FEATURE
+         ===================================================== -->
+
+    <article class="team-featured-main">
+
+      <div class="team-featured-main-image-wrap">
+
+        <img
+          src="images/custom-jersey-printing.jpeg"
+          alt="Custom jersey printing for sports teams"
+          class="team-featured-main-image"
+          loading="lazy"
+        />
+
+        <span class="team-featured-main-number">
+          01
+        </span>
+
+      </div>
+
+
+      <div class="team-featured-main-content">
+
+        <span class="team-featured-category">
+          Precision Custom Printing
+        </span>
+
+        <h3 class="team-featured-main-name">
+          From Blank Apparel
+          <span>To Team Identity.</span>
+        </h3>
+
+        <p class="team-featured-main-description">
+          Add names, numbers, sponsor marks, club crests,
+          player details, and custom artwork while keeping
+          the finished design clean and consistent.
+        </p>
+
+        <a
+          href="contact.html"
+          class="team-featured-main-link"
+        >
+
+          <span>
+            Start a Custom Team Order
+          </span>
+
+          <span class="team-featured-link-icon">
+            <i data-lucide="arrow-up-right"></i>
+          </span>
+
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- =====================================================
+         SECONDARY FEATURES
+         ===================================================== -->
+
+    <div class="team-featured-secondary-grid">
+
+
+      <!-- PERFORMANCE APPAREL -->
+
+      <article class="team-featured-card">
+
+        <div class="team-featured-card-image-wrap">
+
+          <img
+            src="images/performance-fabric.jpeg"
+            alt="Performance sports fabric"
+            class="team-featured-card-image"
+            loading="lazy"
+          />
+
+          <span class="team-featured-card-number">
+            02
+          </span>
+
+        </div>
+
+
+        <div class="team-featured-card-content">
+
+          <span class="team-featured-card-category">
+            Performance Apparel
+          </span>
+
+          <h3 class="team-featured-card-name">
+            Made for
+            <span>Movement.</span>
+          </h3>
+
+          <p>
+            Lightweight teamwear designed for training,
+            competition, and active movement.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- TEAM BRANDING -->
+
+      <article class="team-featured-card">
+
+        <div class="team-featured-card-image-wrap">
+
+          <img
+            src="images/team-branding.jpeg"
+            alt="Custom sports team branding"
+            class="team-featured-card-image"
+            loading="lazy"
+          />
+
+          <span class="team-featured-card-number">
+            03
+          </span>
+
+        </div>
+
+
+        <div class="team-featured-card-content">
+
+          <span class="team-featured-card-category">
+            Team Branding
+          </span>
+
+          <h3 class="team-featured-card-name">
+            Every Detail,
+            <span>On Brand.</span>
+          </h3>
+
+          <p>
+            Keep colors, names, numbers, logos, and sponsor
+            placements consistent across the squad.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="team-projects-cta">
+  <div class="team-projects-cta-container">
+
+    <div class="team-projects-cta-content">
+      <span class="team-projects-cta-label">READY FOR GAME DAY?</span>
+
+      <h2 class="team-projects-cta-title">
+        Create Your Team's
+        <span>Custom Kit.</span>
+      </h2>
+
+      <p class="team-projects-cta-description">
+        Tell us your sport, colors, and team requirements.
+        We'll turn your vision into custom performance apparel.
+      </p>
+    </div>
+
+    <a href="contact.html" class="team-projects-cta-button">
+      <span>Start Your Custom Order</span>
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+
+  </div>
+</section>
+
+    <footer class="site-footer">
+      <div class="footer-main container">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="images/kitstorm logo.png" alt="KitStorm" />
+            <div class="footer-brand-content">
+              <span class="footer-brand-name">
+                <span class="footer-kit">KIT</span
+                ><span class="footer-storm">STORM</span>
+              </span>
+              <small>TEAMWEAR • CUSTOM • PERFORMANCE</small>
+            </div>
+          </a>
+
+          <p>
+            Custom team jerseys and sports apparel built to represent your team.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a href="#" aria-label="Youtube">
+              <i data-lucide="youtube"></i>
+            </a>
+            <a href="#" aria-label="Mail">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="index.html">Home</a>
+          <a href="index2.html">Home 2</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <a href="custom-order.html">Custom Order</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Coming Soon</a>
+          <a href="#">404 Page</a>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h3>Get In Touch</h3>
+
+          <a href="mailto:hello@kitstorm.com">
+            <i data-lucide="mail"></i>
+            <span>hello@kitstorm.com</span>
+          </a>
+
+          <a href="tel:+911234567890">
+            <i data-lucide="phone"></i>
+            <span>+91 12345 67890</span>
+          </a>
+
+          <div class="footer-location">
+            <i data-lucide="map-pin"></i>
+            <span>India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>© 2026 KitStorm. All rights reserved.</p>
+
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+<script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+
+    <script src="global.js"></script>
+    <script src="products.js"></script>
+  </body>
+</html>
