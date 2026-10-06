@@ -138,8 +138,9 @@
 }
 
 .custom-order-hero-primary:hover {
-  background: var(--white);
+  background: var(--primary);
   transform: translateY(-2px);
+  color:white;
 }
 
 .custom-order-hero-secondary {
@@ -1812,7 +1813,7 @@ html.dark .order-process-icon {
 .team-form-submit:hover {
   transform: translateY(-2px);
   background: var(--primary);
-  color: var(--secondary);
+  color: var(--white);
 }
 
 /* =========================================================
@@ -2281,8 +2282,9 @@ html.dark .team-form-textarea textarea::placeholder {
 
 .custom-order-final-primary:hover {
   transform: translateY(-3px);
-  background: var(--white);
-  border-color: var(--white);
+  background: var(--primary);
+  border-color: var(--secondary);
+  color:white;
 }
 
 .custom-order-final-secondary {

@@ -106,8 +106,7 @@
   margin-top: 32px;
 }
 
-.home2-hero-primary,
-.home2-hero-secondary {
+.home2-hero-primary{
   min-height: 49px;
   padding: 0 23px;
   display: inline-flex;
@@ -136,8 +135,9 @@
 }
 
 .home2-hero-primary:hover {
-  background: var(--white);
+  background: var(--primary);
   border-color: var(--white);
+  color:#ffffff;
 }
 
 .home2-hero-primary:hover i,
@@ -146,14 +146,32 @@
 }
 
 .home2-hero-secondary {
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 0 23px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  border-radius: 0;
+  border: 1px solid var(--primary);
+  background: transparent;
   color: var(--white);
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
 }
 
 .home2-hero-secondary:hover {
-  background: var(--white);
-  border-color: var(--white);
-  color: var(--primary);
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-2px);
 }
 
 .home2-hero-benefits {
@@ -1246,33 +1264,38 @@ html.dark .home2-design-item-top i {
 
 .kitwall-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-bottom: 75px;
 }
 
 .kitwall-header .section-tag {
-  align-self: flex-start;
-  margin-top: 7px;
+  align-self: center;
+  margin-top: 0;
 }
 
 .kitwall-heading-wrap {
   width: min(690px, 100%);
+  text-align: center;
 }
 
 .kitwall-heading-wrap h2 {
-  margin: 0;
-  color: var(--secondary);
+  margin: 24px 0 0;
+  color: var(--primary);
   font-size: 3.2rem;
   line-height: 1.08;
   font-weight: 500;
   letter-spacing: -1.8px;
 }
 
+.kitwall-heading-wrap h2 span {
+  color: var(--secondary);
+}
+
 .kitwall-heading-wrap p {
-  max-width: 540px;
-  margin: 22px 0 0 auto;
+  max-width: 650px;
+  margin: 22px auto 0;
   color: var(--text-muted);
   font-size: 15px;
   line-height: 1.8;
@@ -3109,20 +3132,20 @@ html.dark .home2-design-item-top i {
 }
 
 .final-cta-primary {
-  background: var(--primary);
-  color: var(--white);
+  background: var(--secondary);
+  color: var(--black);
   border: 1px solid var(--primary);
 }
 
 .final-cta-primary:hover {
-  background: var(--secondary);
+  background: var(--primary);
   border-color: var(--secondary);
-  color: var(--black);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
 .final-cta-secondary {
-  background: transparent;
+  background: var(--white);
   color: var(--primary);
   border: 1px solid var(--primary);
 }
@@ -3160,7 +3183,7 @@ body.dark .final-cta-content h2 {
   color: var(--white);
 }
 
-body.dark .final-cta-secondary {
+ body.dark .final-cta-secondary {
   color: var(--white);
   border-color: rgba(255, 255, 255, 0.35);
 }
@@ -3168,7 +3191,15 @@ body.dark .final-cta-secondary {
 body.dark .final-cta-secondary:hover {
   background: var(--secondary);
   border-color: var(--secondary);
-  color: var(--black);
+  color: var(--white);
+} 
+
+html.dark .final-cta-secondary:hover,
+body.dark .final-cta-secondary:hover,
+.dark-mode .final-cta-secondary:hover {
+  background: var(--primary);
+  border-color: var(--secondary);
+  color: #ffffff !important;
 }
 
 @media screen and (min-width: 360px) and (max-width: 740px) {
@@ -3501,7 +3532,7 @@ body.dark .final-cta-container,
 html.dark .final-cta-secondary,
 body.dark .final-cta-secondary,
 .dark-mode .final-cta-secondary {
-  color: #ffffff;
+  color: var(--primary);
   border-color: rgba(255, 255, 255, 0.3);
 }/* =========================================================
    KITSTORM MASTER TYPOGRAPHY

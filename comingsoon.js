@@ -58,27 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
      RTL
      ===================================================== */
 
-  function updateDirectionIcon() {
-    if (!rtlToggle) return;
+function updateDirectionIcon() {
+  if (!rtlToggle) return;
 
-    const isRTL = html.getAttribute("dir") === "rtl";
+  rtlToggle.innerHTML = '<i data-lucide="arrow-left-right"></i>';
 
-    rtlToggle.innerHTML = isRTL
-      ? '<i data-lucide="align-left"></i>'
-      : '<i data-lucide="align-right"></i>';
+  refreshIcons();
+}
 
-    refreshIcons();
-  }
+rtlToggle?.addEventListener("click", () => {
+  const isRTL = html.getAttribute("dir") === "rtl";
 
-  rtlToggle?.addEventListener("click", () => {
-    const isRTL = html.getAttribute("dir") === "rtl";
+  html.setAttribute("dir", isRTL ? "ltr" : "rtl");
 
-    html.setAttribute("dir", isRTL ? "ltr" : "rtl");
+  localStorage.setItem("direction", isRTL ? "ltr" : "rtl");
 
-    localStorage.setItem("direction", isRTL ? "ltr" : "rtl");
-
-    updateDirectionIcon();
-  });
+  updateDirectionIcon();
+});
 
   /* =====================================================
      INITIALIZE

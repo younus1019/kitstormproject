@@ -15,11 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dark-mode");
   }
 
-  if (savedDirection === "rtl") {
-    html.setAttribute("dir", "rtl");
-  } else {
-    html.setAttribute("dir", "ltr");
-  }
+  html.setAttribute("dir", savedDirection === "rtl" ? "rtl" : "ltr");
 
   /* =====================================================
      REFRESH LUCIDE ICONS
@@ -68,11 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateDirectionIcon() {
     if (!rtlToggle) return;
 
-    const isRTL = html.getAttribute("dir") === "rtl";
-
-    rtlToggle.innerHTML = isRTL
-      ? '<i data-lucide="align-left"></i>'
-      : '<i data-lucide="align-right"></i>';
+    rtlToggle.innerHTML = '<i data-lucide="arrow-left-right"></i>';
 
     refreshIcons();
   }
@@ -82,11 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
      ===================================================== */
 
   rtlToggle?.addEventListener("click", () => {
-    const isRTL = html.getAttribute("dir") === "rtl";
+    const currentDirection = html.getAttribute("dir") || "ltr";
 
-    html.setAttribute("dir", isRTL ? "ltr" : "rtl");
+    const newDirection = currentDirection === "rtl" ? "ltr" : "rtl";
 
-    localStorage.setItem("direction", isRTL ? "ltr" : "rtl");
+    html.setAttribute("dir", newDirection);
+
+    localStorage.setItem("direction", newDirection);
 
     updateDirectionIcon();
   });
@@ -96,8 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
      ===================================================== */
 
   updateThemeIcon();
-
   updateDirectionIcon();
-
   refreshIcons();
 });

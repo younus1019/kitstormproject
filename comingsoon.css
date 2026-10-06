@@ -88,6 +88,52 @@ button {
   outline: none;
 }
 
+.coming-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.coming-logo img {
+  width: 58px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.coming-logo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.coming-logo-name {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.8px;
+}
+
+.coming-logo-kit {
+  color: var(--primary);
+}
+
+.coming-logo-storm {
+  color: var(--secondary);
+}
+
+.coming-logo-content small {
+  margin-top: 5px;
+  color: var(--text-muted);
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
 
 /* =========================================================
    PAGE CONTROLS

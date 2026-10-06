@@ -17,7 +17,7 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: center 15%;
   transform: scale(1.02);
 }
 
@@ -155,8 +155,9 @@
 }
 
 .home-hero-primary:hover {
-  background: var(--white);
+  background: var(--primary);
   transform: translateY(-2px);
+   color: var(--white);
 }
 
 .home-hero-secondary {
@@ -2046,7 +2047,7 @@ html.dark .home-performance-link {
   column-gap: 12px;
   row-gap: 10px;
   align-content: center;
-  padding: 0 24px;
+  padding: 18px 24px 10px;
   border-right: 1px solid var(--border);
 }
 
@@ -3253,7 +3254,9 @@ html.dark .home-teamroom-product-image {
 .home-final-cta-secondary:hover {
   background: var(--primary);
   color: var(--white);
-}
+} 
+
+
 
 html.dark .home-final-cta {
   background:

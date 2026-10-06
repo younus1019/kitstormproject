@@ -718,7 +718,7 @@
   position: relative;
   z-index: 2;
   margin-top: auto;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .quote-request-side-label {
@@ -751,6 +751,72 @@
 }
 
 
+.quote-request-side-middle {
+  position: relative;
+  z-index: 2;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.quote-request-side-middle > span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--secondary);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.quote-request-side-middle h4 {
+  max-width: 260px;
+  margin: 0;
+  color: var(--white);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.quote-request-side-middle p {
+  max-width: 255px;
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.quote-request-side-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.quote-request-side-points > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.quote-request-side-points i,
+.quote-request-side-points svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--secondary);
+  stroke: var(--secondary);
+  stroke-width: 1.8;
+}
+
+.quote-request-side-points span {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
 
 
 /* =========================================================
@@ -771,10 +837,14 @@
   gap: 10px;
 }
 
-.quote-request-side-list i {
+.quote-request-side-list i,
+.quote-request-side-list svg {
   width: 14px;
   height: 14px;
-  color: var(--secondary);
+  flex-shrink: 0;
+  color: var(--secondary) !important;
+  stroke: var(--secondary) !important;
+  stroke-width: 1.8;
 }
 
 .quote-request-side-list span {
@@ -865,7 +935,7 @@
   border: 1px solid var(--border);
   outline: none;
   border-radius: 0;
-  background: var(--surface);
+  background: var(--surface) !important;
   color: var(--text);
   font-family: var(--font-primary);
   font-size: 14px;
@@ -1017,6 +1087,13 @@ html.dark .quote-form-field textarea {
   color: var(--white);
 }
 
+html.dark .quote-form-field select {
+  background-color: #100c17 !important;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--secondary) 50%),
+    linear-gradient(135deg, var(--secondary) 50%, transparent 50%);
+}
+
 html.dark .quote-form-field input:focus,
 html.dark .quote-form-field select:focus,
 html.dark .quote-form-field textarea:focus {
@@ -1027,6 +1104,12 @@ html.dark .quote-form-field select {
   background-image:
     linear-gradient(45deg, transparent 50%, var(--secondary) 50%),
     linear-gradient(135deg, var(--secondary) 50%, transparent 50%);
+}
+
+html.dark .quote-form-field input[type="date"] {
+  background-color: #100c17 !important;
+  color: var(--white) !important;
+  color-scheme: dark;
 }
 
 
@@ -1409,9 +1492,9 @@ html.dark .quote-form-field select {
   gap: 9px;
   min-height: 45px;
   padding: 0 22px;
-  background: var(--primary);
+  background: var(--secondary);
   border: 1px solid var(--primary);
-  color: var(--white);
+  color: var(--black);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -1429,9 +1512,9 @@ html.dark .quote-form-field select {
 }
 
 .quote-process-link:hover {
-  background: var(--secondary);
+  background: var(--primary);
   border-color: var(--secondary);
-  color: var(--primary);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
@@ -1849,6 +1932,73 @@ html.dark .quote-process-icon {
   color: rgba(255, 255, 255, 0.5);
   font-size: 17px;
   line-height: 1.8;
+}
+
+.contact-side-middle {
+  position: relative;
+  z-index: 2;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-side-middle > span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--secondary);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.contact-side-middle h4 {
+  max-width: 260px;
+  margin: 0;
+  color: var(--white);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.contact-side-middle p {
+  max-width: 255px;
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.contact-side-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.contact-side-points > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.contact-side-points i,
+.contact-side-points svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--secondary) !important;
+  stroke: var(--secondary) !important;
+  stroke-width: 1.8;
+}
+
+.contact-side-points span {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 11px;
+  line-height: 1.4;
 }
 
 
@@ -2356,9 +2506,9 @@ html.dark .contact-detail-arrow {
   gap: 8px;
   min-height: 42px;
   padding: 0 18px;
-  background: var(--primary);
+  background: var(--secondary);
   border: 1px solid var(--primary);
-  color: var(--white);
+  color: var(--black);
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -2376,9 +2526,9 @@ html.dark .contact-detail-arrow {
 }
 
 .contact-faq-bottom a:hover {
-  background: var(--secondary);
+  background: var(--primary);
   border-color: var(--secondary);
-  color: var(--primary);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
@@ -2654,9 +2804,10 @@ html.dark .contact-faq-item {
 }
 
 .contact-final-primary:hover {
-  background: var(--white);
-  border-color: var(--white);
+  background: var(--primary);
+  border-color: var(--secondary);
   transform: translateY(-3px);
+  color:white;
 }
 
 .contact-final-secondary {

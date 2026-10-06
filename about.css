@@ -134,8 +134,9 @@
 }
 
 .about-btn-primary:hover {
-  background: var(--white);
+  background: var(--primary);
   transform: translateY(-2px);
+  color:white;
 }
 
 .about-btn-secondary {
@@ -948,8 +949,9 @@
 }
 
 .about-cta-primary:hover {
-  background: var(--white);
+  background: var(--primary);
   transform: translateY(-2px);
+  color:white;
 }
 
 .about-cta-secondary {

@@ -326,9 +326,9 @@ html.dark .brand-storm {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: var(--white);
-  background: var(--primary);
-  border: 1px solid var(--primary);
+  color: var(--black);
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
   border-radius: 0px;
   font-size: 12px;
   font-weight: 600;
@@ -342,9 +342,10 @@ html.dark .brand-storm {
 
 .quote-btn:hover {
   color: var(--black);
-  background: var(--secondary);
+  background: var(--primary);
   border-color: var(--secondary);
   transform: translateY(-2px);
+  color:#ffffff;
 }
 
 .quote-btn svg {

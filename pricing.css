@@ -160,8 +160,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: #ffffff;
-  background: var(--primary);
+  color: black;
+  background: var(--secondary);
   border: 1px solid var(--primary);
   font-size: 12px;
   font-weight: 600;
@@ -173,8 +173,8 @@
 }
 
 .pricing-hero-btn:hover {
-  color: var(--black);
-  background: var(--secondary);
+  color: var(--white);
+  background: var(--primary);
   border-color: var(--secondary);
   transform: translateY(-2px);
 }
@@ -2309,8 +2309,9 @@ html.dark .pricing-included-note > div {
 
 .pricing-final-primary:hover {
   transform: translateY(-3px);
-  background: var(--white);
-  border-color: var(--white);
+  background: var(--primary);
+  border-color: var(--secondary);
+  color:white;
 }
 
 .pricing-final-secondary {

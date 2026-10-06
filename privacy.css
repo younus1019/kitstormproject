@@ -134,6 +134,20 @@ ul {
   transform: translateY(-2px);
 }
 
+/* =====================================================
+   PAGE CONTROLS
+   ===================================================== */
+
+.page-controls {
+  position: fixed;
+  top: 18px;
+  right: 24px;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 /* ================================
    LEGAL HERO
@@ -273,6 +287,53 @@ ul {
   width: 15px;
   height: 15px;
   color: var(--secondary);
+}
+
+.legal-hero__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 24px;
+}
+
+.legal-hero__logo img {
+  width: 58px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.legal-hero__logo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.legal-hero__logo-name {
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.legal-hero__logo-name span {
+  color: var(--primary);
+}
+
+.legal-hero__logo-name strong {
+  color: var(--secondary);
+  font-weight: 800;
+}
+
+.legal-hero__logo-content small {
+  margin-top: 5px;
+  color: var(--text-muted);
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 
