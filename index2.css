@@ -3050,7 +3050,7 @@ html.dark .home2-design-item-top i {
 
 .home2-final-cta {
   width: 100%;
-  padding: 110px 6%;
+  padding: 110px 6% 30px;
   background: var(--surface);
   transition: background var(--transition);
 }

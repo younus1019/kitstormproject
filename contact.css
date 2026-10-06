@@ -2674,7 +2674,7 @@ html.dark .contact-faq-item {
 
 .contact-final-section {
   position: relative;
-  padding: 120px 0;
+  padding: 120px 0 20px;
   background: var(--bg);
   color: var(--text);
   overflow: hidden;
