@@ -209,3 +209,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateThemeIcon();
 });
+
+
+// Refresh all Lucide icons
+if (window.lucide) {
+  window.lucide.createIcons();
+}

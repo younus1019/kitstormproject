@@ -7,28 +7,30 @@ document.querySelectorAll(".contact-faq-question").forEach((button) => {
       faq.classList.remove("active");
 
       const faqButton = faq.querySelector(".contact-faq-question");
-      const icon = faqButton.querySelector("i");
-
       faqButton.setAttribute("aria-expanded", "false");
-
-      if (icon) {
-        icon.setAttribute("data-lucide", "plus");
-      }
     });
 
     if (!isActive) {
       item.classList.add("active");
       button.setAttribute("aria-expanded", "true");
-
-      const icon = button.querySelector("i");
-
-      if (icon) {
-        icon.setAttribute("data-lucide", "minus");
-      }
     }
 
-    if (typeof lucide !== "undefined") {
-      lucide.createIcons();
+    document.querySelectorAll(".contact-faq-item").forEach((faq) => {
+      const faqButton = faq.querySelector(".contact-faq-question");
+      const isOpen = faq.classList.contains("active");
+      const iconName = isOpen ? "minus" : "plus";
+
+      const oldIcon = faqButton.querySelector("i, svg");
+
+      if (oldIcon) {
+        const newIcon = document.createElement("i");
+        newIcon.setAttribute("data-lucide", iconName);
+        oldIcon.replaceWith(newIcon);
+      }
+    });
+
+    if (window.lucide) {
+      window.lucide.createIcons();
     }
   });
 });

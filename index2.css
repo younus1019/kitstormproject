@@ -1759,6 +1759,8 @@ html.dark .home2-design-item-top i {
     top: 225px;
   }
 }
+
+
 .teamwear-ecosystem {
   position: relative;
   padding: 125px 0 115px;
@@ -1927,6 +1929,10 @@ html.dark .home2-design-item-top i {
 .teamwear-ecosystem__featured-content h3 span {
   color: var(--secondary);
 }
+
+
+
+
 
 .teamwear-ecosystem__featured-content p {
   max-width: 450px;
@@ -2157,34 +2163,51 @@ html.dark .home2-design-item-top i {
    DARK MODE
 ================================ */
 
-.dark-mode .teamwear-ecosystem {
+
+/* =========================================
+   DARK MODE — TEAMWEAR ECOSYSTEM
+========================================= */
+
+html.dark .teamwear-ecosystem {
   background: #0d0b10;
 }
 
-.dark-mode .teamwear-ecosystem__heading-row h2 {
-  color: var(--white);
+html.dark .teamwear-ecosystem__heading-row h2 {
+  color: #FFFFFF;
 }
 
-.dark-mode .teamwear-ecosystem__card {
+html.dark .teamwear-ecosystem__card {
   background: #15121a;
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-.dark-mode .teamwear-ecosystem__card-content h3 {
-  color: var(--white);
+/* Primary heading text → white */
+html.dark .teamwear-ecosystem__card-content h3 {
+  color: #FFFFFF !important;
 }
 
-.dark-mode .teamwear-ecosystem__card-content a {
-  color: var(--white);
+/* Secondary/accent text stays gold */
+html.dark .teamwear-ecosystem__card-content h3 span,
+html.dark .teamwear-ecosystem__heading-row h2 span,
+html.dark .teamwear-ecosystem__featured-content h3 span {
+  color: var(--secondary) !important;
 }
 
-.dark-mode .teamwear-ecosystem__card:hover {
+html.dark .teamwear-ecosystem__card-content a {
+  color: #FFFFFF;
+}
+
+html.dark .teamwear-ecosystem__card:hover {
   border-color: rgba(255, 176, 0, 0.4);
 }
 
-.dark-mode .teamwear-ecosystem__footer-content a {
-  color: var(--white);
+html.dark .teamwear-ecosystem__footer-content a {
+  color: #FFFFFF;
 }
+
+
+
+
 
 
 /* ================================
@@ -3646,3 +3669,14 @@ body.dark .final-cta-secondary,
   .orbit-piece p,
   .home2-identity-content p { font-size: 13px; }
 }
+
+
+
+
+
+
+
+
+
+
+
